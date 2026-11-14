@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ASTROQUEST</string>
+    <string name="title_activity_main">ASTROQUEST</string>
+    <string name="package_name">com.astroquest.marsimulator</string>
+    <string name="custom_url_scheme">com.astroquest.marsimulator</string>
+</resources>

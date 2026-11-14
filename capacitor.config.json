@@ -1,0 +1,14 @@
+{
+  "appId": "com.astroquest.marsimulator",
+  "appName": "ASTROQUEST",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "backgroundColor": "#090D18",
+    "allowMixedContent": true
+  }
+}
+

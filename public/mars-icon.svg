@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="marsGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF7139" />
+      <stop offset="45%" stop-color="#B64232" />
+      <stop offset="80%" stop-color="#662215" />
+      <stop offset="100%" stop-color="#090D18" />
+    </radialGradient>
+    <linearGradient id="orbitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7139" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#E5B879" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="#090D18" />
+  <!-- Mars Sphere -->
+  <circle cx="256" cy="256" r="160" fill="url(#marsGrad)" />
+  <!-- Polar Cap -->
+  <ellipse cx="256" cy="115" rx="60" ry="18" fill="#FFFFFF" opacity="0.85" />
+  <!-- Orbiting Satellite Ring -->
+  <ellipse cx="256" cy="256" rx="210" ry="80" fill="none" stroke="url(#orbitGrad)" stroke-width="6" transform="rotate(-25 256 256)" stroke-dasharray="12 8" />
+  <!-- Spacecraft Beacon -->
+  <circle cx="410" cy="190" r="10" fill="#38C99A" />
+  <circle cx="410" cy="190" r="18" fill="none" stroke="#38C99A" stroke-width="2" opacity="0.6" />
+</svg>
+

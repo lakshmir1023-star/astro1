@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-mars-deep: #090D18;
+  --color-mars-secondary: #111827;
+  --color-mars-red: #B64232;
+  --color-mars-orange: #FF7139;
+  --color-mars-nebula: #17243A;
+  --color-mars-gold: #E5B879;
+  --color-mars-green: #38C99A;
+  --color-mars-white: #E8EDF5;
+  --color-mars-silver: #AAB4C8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #090D18;
+  color: #E8EDF5;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Glassmorphism Panels */
+.glass-panel {
+  background: rgba(23, 36, 58, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 113, 57, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-panel-subtle {
+  background: rgba(17, 24, 39, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(170, 180, 200, 0.12);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(23, 36, 58, 0.85) 0%, rgba(17, 24, 39, 0.9) 100%);
+  border: 1px solid rgba(255, 113, 57, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Glow Highlights */
+.glow-orange {
+  box-shadow: 0 0 16px rgba(255, 113, 57, 0.35);
+}
+
+.glow-red {
+  box-shadow: 0 0 16px rgba(182, 66, 50, 0.4);
+}
+
+.glow-gold {
+  box-shadow: 0 0 18px rgba(229, 184, 121, 0.45);
+}
+
+.glow-green {
+  box-shadow: 0 0 14px rgba(56, 201, 154, 0.35);
+}
+
+.text-glow-orange {
+  text-shadow: 0 0 10px rgba(255, 113, 57, 0.6);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 12px rgba(229, 184, 121, 0.7);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(9, 13, 24, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 113, 57, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 113, 57, 0.7);
+}
+
+/* Safe area padding for mobile status bar and home indicator */
+.safe-top {
+  padding-top: max(env(safe-area-inset-top), 12px);
+}
+
+.safe-bottom {
+  padding-bottom: max(env(safe-area-inset-bottom), 16px);
+}
+
+/* Radar & Grid Background Effects */
+.bg-grid-pattern {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 113, 57, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 113, 57, 0.05) 1px, transparent 1px);
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', monospace, sans-serif;
+}
+
